@@ -1,6 +1,7 @@
-##Course
-#getdata-032
-course project
+#Data Science Specialization
+##getdata-032
+Getting And Cleaning Data
+Course project
 
 ##Description
 
