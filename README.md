@@ -1,7 +1,7 @@
 #Data Science Specialization
-##getdata-032
-Getting And Cleaning Data
-Course project
+##Getting And Cleaning Data (code:getdata-032)
+
+This is a final project for the module
 
 ##Description
 

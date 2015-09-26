@@ -14,7 +14,7 @@ current_data_path <- "."
 get_all_activities <- function() {
   ta <-
     read.table(paste(
-      data_path, "activity_labels.txt", sep = '/', collapse = ''
+      current_data_path, "activity_labels.txt", sep = '/', collapse = ''
     ))
   data_frame(Activity = ta$V2)
 }
@@ -23,7 +23,7 @@ activities <- get_all_activities()
 get_all_features <- function() {
   tf <-
     read.table(paste(
-      data_path, "features.txt", sep = '/', collapse = ''
+      current_data_path, "features.txt", sep = '/', collapse = ''
     ))
   data_frame(Feature = tf$V2)
 }
@@ -33,7 +33,7 @@ features <- get_all_features()
 get_subjects <- function(test_or_train) {
   s_tbl <-
     read.table(paste(
-      data_path, test_or_train, paste(
+      current_data_path, test_or_train, paste(
         "subject_",test_or_train,".txt", sep = '', collapse = ''
       ), sep = '/', collapse = ''
     ))
@@ -44,7 +44,7 @@ get_subjects <- function(test_or_train) {
 get_features <- function(test_or_train) {
   f_tbl <-
     read.table(paste(
-      data_path, test_or_train, paste(
+      current_data_path, test_or_train, paste(
         "x_",test_or_train,".txt", sep = '', collapse = ''
       ), sep = '/', collapse = ''
     ))
@@ -56,7 +56,7 @@ get_features <- function(test_or_train) {
 get_activities <- function(test_or_train) {
   a_tbl <-
     read.table(paste(
-      data_path, test_or_train, paste(
+      current_data_path, test_or_train, paste(
         "y_",test_or_train,".txt", sep = '', collapse = ''
       ), sep = '/', collapse = ''
     ))
@@ -92,7 +92,7 @@ compute_average <- function() {
   write.table(
     dt_mean,
     file = paste(
-      data_path, "average_tbl.txt", sep = '/', collapse = ''
+      current_data_path, "average_tbl.txt", sep = '/', collapse = ''
     ), row.names = FALSE
   )
   return(dt_mean)
