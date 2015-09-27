@@ -21,4 +21,4 @@
 
 The data has been downloaded from [archive.ics.uci.edu](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 
-For cleaning the data, all of the variables for the test and training session had to be read separately the summarised into a tidy data set as described in the run_analiys.R script by calling the function compute_analisys().
+For cleaning the data, all of the variables for the test and training session had to be read separately then summarised into a tidy data set as described in the run_analiys.R script by calling the function compute_analisys().
