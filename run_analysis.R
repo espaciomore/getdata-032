@@ -87,7 +87,7 @@ compute_average <- function() {
   step5_tbl <- arrange(group_by(step2_tbl, Activity, Subject), Activity, Subject)
   
   dt <- data.table(step5_tbl)
-  dt_mean <- avg <- dt[, lapply(.SD, mean), by = c("Activity", "Subject")]
+  dt_mean <- dt[, lapply(.SD, mean), by = c("Activity", "Subject")]
   
   write.table(
     dt_mean,
